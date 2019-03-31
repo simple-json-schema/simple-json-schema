@@ -327,9 +327,9 @@ If a schema is of the "type" form, then:
 * If the value of the `type` member is `string`, then the instance is accepted
   if it is a JSON string.
 
-If the instance is not accepted, the the standard error for this case shall have
-an `instancePath` pointing to the instance, and a `schemaPath` pointing to the
-`type` member.
+If the instance is not accepted, then the standard error for this case shall
+have an `instancePath` pointing to the instance, and a `schemaPath` pointing to
+the `type` member.
 
 For example, if we evaluate the instance:
 
