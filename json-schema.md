@@ -135,9 +135,11 @@ of the following forms:
 ## Evaluation context and reference resolution {#ref-resolution}
 
 An evaluation context is a collection of schemas which may refer to one another.
-An evaluation context is correct if all of its constituent schemas are correct,
-no two constituent schemas have the same `id` value, and no more than one schema
-lacks an `id` value.
+An evaluation context is correct if:
+
+* all of its constituent schemas are correct,
+* no two constituent schemas have the same `id` value, and
+* no more than one schema lacks an `id` value.
 
 If a schema is correct and it has a member named `ref`, then this member is said
 to be a reference. The reference of a correct schema **MUST** be resolvable.
