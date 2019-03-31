@@ -119,16 +119,16 @@ of the following forms:
 * The "type" form: the schema may have members with the name `id`,
   `definitions`, and/or `type`, but none of the other keywords listed in
   (#schema-keywords).
-* The "elements" form: the schema may have the members with the name `id`,
+* The "elements" form: the schema may have members with the name `id`,
   `definitions`, and/or `elements`, but none of the other keywords listed in
   (#schema-keywords).
-* The "properties" form: the schema may have the members with the name `id`,
+* The "properties" form: the schema may have members with the name `id`,
   `definitions`, `properties`, and/or `optionalProperties`, but none of the
   other keywords listed in (#schema-keywords).
-* The "values" form: the schema may have the members with the name `id`,
+* The "values" form: the schema may have members with the name `id`,
   `definitions`, and/or `values`, but none of the other keywords listed in
   (#schema-keywords).
-* The "discriminator" form: the schema may have the members with the name `id`,
+* The "discriminator" form: the schema may have members with the name `id`,
   `definitions`, and/or `discriminator`, but none of the other keywords listed
   in (#schema-keywords).
 
