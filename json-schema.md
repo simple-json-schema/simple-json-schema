@@ -492,18 +492,22 @@ Against this schema, then the standard errors are:
 If instead we evalute the instance:
 
 ```json
-{ "b": 3, "c": 3 }
+{ "b": 3, "c": 3, "e": 3 }
 ```
 
-The standard errors are:
+The standard errors, using strict instance semantics, are:
 
 ```json
 [
   { "instancePath": "", "schemaPath": "/properties/a" },
   { "instancePath": "/b", "schemaPath": "/properties/b/type" },
-  { "instancePath": "/c", "schemaPath": "/optionalProperties/c/type" }
+  { "instancePath": "/c", "schemaPath": "/optionalProperties/c/type" },
+  { "instancePath": "/e", "schemaPath": "" }
 ]
 ```
+
+If we the same instance were evaluated, but without strict schema semantics, the
+final element of the above array of errors would not be present.
 
 ### Values form
 
