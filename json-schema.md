@@ -274,7 +274,45 @@ schema which the `ref` member resolves to accepts the instance. The standard
 errors to produce are the same as those that the referent schema produces. The
 resolution of a `ref` member is described in (#ref-resolution).
 
-### Type form
+For example, if we evaluate the instance:
+
+```json
+"example"
+```
+
+Against the schema:
+
+```json
+{
+  "ref": "http://example.com"
+}
+```
+
+Within an evaluating context containing the schema:
+
+```json
+{
+  "id": "http://example.com",
+  "type": "number"
+}
+```
+
+Then the standard errors are:
+
+```json
+[
+  {
+    "instancePath": "",
+    "schemaPath": "/type",
+    "schemaURI": "http://example.com"
+  }
+]
+```
+
+See (#eval-type-form) for how the `type` member produces errors, as the errors
+in the example above compose upon `type` errors.
+
+### Type form {eval-type-form}
 
 The "type" form is meant to describe the primitive data types of JSON.
 
@@ -289,9 +327,9 @@ If a schema is of the "type" form, then:
 * If the value of the `type` member is `string`, then the instance is accepted
   if it is a JSON string.
 
-If the instance is not accepted, then a single error is produced. The
-`instancePath` shall point to the instance. The `schemaPath` of this error shall
-point to the `type` member.
+If the instance is not accepted, the the standard error for this case shall have
+an `instancePath` pointing to the instance, and a `schemaPath` pointing to the
+`type` member.
 
 For example, if we evaluate the instance:
 
@@ -305,7 +343,7 @@ Against the schema:
 { "type": "number" }
 ```
 
-Then a standard error would be:
+Then a standard errors are:
 
 ```json
 [
@@ -347,7 +385,7 @@ Then if we evaluate the instance:
 "example"
 ```
 
-Against this schema, a standard error would be:
+Against this schema, a standard error are:
 
 ```json
 [
@@ -361,7 +399,7 @@ If instead we evaluate the instance:
 [1, 2, "foo", 3, "bar"]
 ```
 
-A standard error would be:
+The standard errors are:
 
 ```json
 [
@@ -443,7 +481,7 @@ Then if we evaluate the instance:
 "example"
 ```
 
-Against this schema, then a standard error would be:
+Against this schema, then the standard errors are:
 
 ```json
 [
@@ -457,7 +495,7 @@ If instead we evalute the instance:
 { "b": 3, "c": 3 }
 ```
 
-A standard error would be:
+The standard errors are:
 
 ```json
 [
@@ -503,7 +541,7 @@ Then if we evaluate the instance:
 "example"
 ```
 
-Against this schema, a standard error would be:
+Against this schema, the standard errors are:
 
 ```json
 [
@@ -517,7 +555,7 @@ If instead we evaluate the instance:
 { "a": 1, "b": 2, "c": "foo", "d": 3, "e": "bar"}
 ```
 
-A standard error would be:
+The standard errors are:
 
 ```json
 [
