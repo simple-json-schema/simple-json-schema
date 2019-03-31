@@ -134,7 +134,7 @@ of the following forms:
 
 ## Evaluation context and reference resolution {#ref-resolution}
 
-An evluation context is a collection of schemas which may refer to one another.
+An evaluation context is a collection of schemas which may refer to one another.
 An evaluation context is correct if all of its constituent schemas are correct,
 no two constituent schemas have the same `id` value, and no more than one schema
 lacks an `id` value.
