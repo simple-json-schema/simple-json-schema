@@ -148,7 +148,8 @@ Reference resolution is defined as follows:
 1. By (#schema-keywords), a schema may be contained by another schema. Reference
    resolution uses the "root" of a schema to determine a base URI. The "root" of
    a given schema is the immediate element of an evaluation context which
-   contains the given schema.
+   contains the given schema. All schemas are, for this definition, considered
+   to contain themselves.
 
 2. By (#schema-keywords), the value of the reference must be a URI-reference.
    This URI-reference is resolved using the process described in [@!RFC3986] to
