@@ -343,7 +343,7 @@ Against the schema:
 { "type": "number" }
 ```
 
-Then a standard errors are:
+Then the standard errors are:
 
 ```json
 [
