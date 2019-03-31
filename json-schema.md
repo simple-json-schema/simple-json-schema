@@ -117,7 +117,7 @@ of the following forms:
 * The "ref" form: the schema may have members with the name `id`, `definitions`,
   and/or `ref`, but none of the other keywords listed in (#schema-keywords).
 * The "type" form: the schema may have members with the name `id`,
-  `definitions`, and/or `ref`, but none of the other keywords listed in
+  `definitions`, and/or `type`, but none of the other keywords listed in
   (#schema-keywords).
 * The "elements" form: the schema may have the members with the name `id`,
   `definitions`, and/or `elements`, but none of the other keywords listed in
