@@ -97,7 +97,7 @@ requirements:
     JSON object. The values of this object **MUST** all be correct schemas. All
     of these schemas **MUST** fall into the "properties" form (see (#forms)),
     and **MUST NOT** have members in `properties` or `optionalProperties` whose
-    name has the same value as `propertyName`.
+    name has the same value as `propertyName`'s.
 
     These restrictions on the values within `mapping` are to prevent ambiguous
     or unsatisfiable schemas.
