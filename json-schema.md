@@ -385,7 +385,7 @@ Then if we evaluate the instance:
 "example"
 ```
 
-Against this schema, a standard error are:
+Against this schema, the standard errors are:
 
 ```json
 [
