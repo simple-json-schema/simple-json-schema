@@ -154,7 +154,8 @@ Reference resolution is defined as follows:
 2. By (#schema-keywords), the value of the reference must be a URI-reference.
    This URI-reference is resolved using the process described in [@!RFC3986] to
    produce a resolved URI. If the root of a schema has a member named `id`, then
-   that member's corresponding value shall be used as the base URI.
+   that member's corresponding value shall be used as the base URI for the URI
+   resolution process.
 
 3. Take the URI from (2), and remove its fragment part, if present.
 
