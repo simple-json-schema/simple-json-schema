@@ -425,7 +425,7 @@ If a schema is of the "properties" form, then:
 1. If the instance is not a JSON object, then the instance is rejected.
 
    The standard error for this case has an `instancePath` pointing to the
-   instance. If the schem has a `properties` member, then the `schemaPath` of
+   instance. If the schema has a `properties` member, then the `schemaPath` of
    the error shall point to the `properties` member. Otherwise, `schemaPath`
    shall point to the `optionalProperties` member.
 
