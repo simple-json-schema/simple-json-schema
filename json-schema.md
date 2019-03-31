@@ -201,10 +201,6 @@ schema with ID `http://example.com/foo`. Both of the references with value `#`
 refer the root schema with ID `http://example.com/foo`. The `id` keyword of the
 `b` definition is irrelevant, as it occurs outside of a root schema.
 
-As a consequence of this definition, members of the `definitions` of a schema
-are impossible to refer to. Implementations **MAY** raise a warning to indicate
-this presumably dead code, but **MUST NOT** consider this to be an error.
-
 # Semantics
 
 This section specifies when an instance is valid against a correct schema,
