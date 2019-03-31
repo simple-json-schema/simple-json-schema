@@ -47,7 +47,7 @@ The terms "absolute-URI" and "URI-reference", when they appear in this document,
 are to be understood as they are defined in [@!RFC3986].
 
 The term "JSON Pointer", when it appears in this document, is to be understood
-as they are defined in [@RFC6901].
+as it is defined in [@RFC6901].
 
 # Terminology
 
