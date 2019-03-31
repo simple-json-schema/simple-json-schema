@@ -53,7 +53,7 @@ as it is defined in [@!RFC6901].
 
 * instance: A JSON value being validated.
 * schema: A JSON object describing the form of valid instances.
-* evaluation context: A collection of schemas whcih may refer to one another.
+* evaluation context: A collection of schemas which may refer to one another.
 * validation error: A JSON object representing a reason why an instance is
   invalid.
 
