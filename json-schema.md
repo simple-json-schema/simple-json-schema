@@ -506,8 +506,8 @@ The standard errors, using strict instance semantics, are:
 ]
 ```
 
-If we the same instance were evaluated, but without strict schema semantics, the
-final element of the above array of errors would not be present.
+If we the same instance were evaluated, but without strict instance semantics,
+the final element of the above array of errors would not be present.
 
 ### Values form
 
